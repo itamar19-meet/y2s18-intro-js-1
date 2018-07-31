@@ -10,11 +10,16 @@
 
     <script>
     	var exited = prompt("what are 3 things you are exited about in meet?")
-    	exited.split(", ")
-    	exited.sort()
-    	exited.join(", ")
-    	document.write(exited)
+    	var list = exited.split(", ")
+    	list.sort()
+    	var joined_list = list.join(", ")
+    	document.write(typeof(list))
+    	document.write(typeof(joined_list))
+
+
+
     </script>
 </body>
 
 </html>
+

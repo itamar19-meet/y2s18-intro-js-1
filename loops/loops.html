@@ -16,8 +16,24 @@ function getRandomInt(min, max) {
 
 var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
+var guess = prompt("guess a number bitween 1 and 100");
+for(var i=0; i<=100;i++){
+	
+	if(guess>randomInt){
+		guess = prompt("its too high, guss again");
 
-// your code goes under here
+	}
+	else if(guess<randomInt){
+		guess = prompt("its too low, guss again");
+	}
+	else if(guess == randomInt){
+		alert("right answer! it took you "+i+ " gusses!");
+		i = 101;
+	}
+}
+
+
+
 
     </script>
 </body>
