@@ -17,21 +17,25 @@ function isLetter(char) {
 var palindrom;
 var palin = [];
 var bbb;
-var word = prompt("insert a word")
+
 function isPalindrome(word){
 	var word_len= word.length;
-	for(i =(word_len-1) ;i<= 0;i-- ){
-		bbb = word.chartAt(i);
-		palin.unshift("bbb");
+	for(i =(word_len-1) ;i>= 0;i-- ){
+		//alert("ff");
+		bbb = word.charAt(i);
+		palin.push(bbb);
+
 	}
-	palindrom = document.getElementById("demo").innerHTML = palin.join("");
-	if(palindrom == word){
+	var d = palin.join("");
+	if(d == word){
 		alert("it's a palindrom!")
+	}
+	else{
+		alert("it's not a palindrom")
 	}
 
 }
 
-isPalindrome()
 
     </script>
 </body>
